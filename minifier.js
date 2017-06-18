@@ -10,7 +10,8 @@ meteorJsMinify = function (source) {
       compress: {
         drop_debugger: false,
         unused: false,
-        dead_code: false
+        dead_code: false,
+        comparisons: false
       }
     }).code;
 
