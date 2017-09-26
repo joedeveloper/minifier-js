@@ -6,11 +6,11 @@ Package.describe({
 
 Npm.depends({
   "source-map": "0.5.6",
-  "uglify-js": "git+https://github.com/mishoo/UglifyJS2#harmony-v2.8.22",
+  "uglify-es": "git+https://github.com/mishoo/UglifyJS2.git#2ed3f8db4482025446999461aab5a6ea36c9896a",
 });
 
 Package.onUse(function (api) {
-  api.use('babel-compiler@6.18.1');
+  api.use('babel-compiler');
   api.export(['meteorJsMinify']);
   api.addFiles(['minifier.js'], 'server');
 });
